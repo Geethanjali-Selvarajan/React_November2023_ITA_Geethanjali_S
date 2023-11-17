@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <script type="text/javascript" src="FORM.js"></script>
+</head>
+<body>
+    <fieldset>
+    <form>
+        <u><h1>Form</h1></u>
+
+            <label for="fn">First name</label>
+            <input type="text" id="fn"><br>
+            <br>
+
+            <label for="ln">Last name</label>
+            <input type="text" id="ln"><br>
+            <br>
+
+            <label for="regs">Register_No</label>
+            <input type="text" id="regs" maxlength="13" pattern="[a-zA-Z0-9]+"><br>
+            <br>
+            
+            <label>Department</label>
+            <input list="data">
+            <datalist id="data">
+                <option value="IT"></option>
+                <option value="CSE"></option>
+                <option value="EEE"></option>
+                <option value="ECE"></option>
+            </datalist><br>
+            <br>
+            
+            <label>Subject</label><br>
+            <input type="checkbox" id="re" >
+            <label for="re">React</label><br>
+            <input type="checkbox" id="aj" >
+            <label for="aj">Advance Java</label><br>
+            <input type="checkbox" id="daa" > 
+            <label for="daa">DAA</label><br>
+            <br> 
+            
+            <label>Gender</label><br>
+            <input type="radio" id="f" name="1"><label for="f">Female</label><br>
+            <input type="radio" id="m" name="1"><label for="m">Male</label><br>
+            <br>
+            
+            <label for="dob">DOB</label>
+            <input type="date" id="dob"><br>
+            <br>
+            
+            <label for="coll">Choose a College</label>
+            <select id="coll">
+                <option>Sri Krishna College</option>
+                <option>Sri Ramakrishna College</option>
+                <option>SRM University</option>
+                <option>Bannari Amman College </option>
+                <option>PSG College </option>
+                <option>KCT College </option>
+            </select><br>
+            <br>
+
+            <label for="ph">Mobile Number</label>
+            <input id="ph" type="text" maxlength="10" pattern="[0-9]+"><br>
+            <br>
+            
+            <label for="pass">Password</label>
+            <input id="pass" type="password" maxlength="6" pattern="[0-9a-zA-Z]+"><br>
+            <br>
+
+            <input type="submit">
+            
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+       <legend><h1>Javascript</h1></legend> 
+        <input id="name" type="label" placeholder="Enter your name" >
+        <input type="button" onclick="clickevent()" value="click here">
+        
+    </fieldset><br> 
+    <fieldset>
+        <h3>Find the largest number</h3>
+        <input id="first" type="label" placeholder="First Number">
+        <input id="Second" type="label" placeholder="Second Number"><br><br>
+
+        <input type="button" onclick="clickevent1()" value="click here">
+
+    </fieldset>
+    </body>
+</html>
